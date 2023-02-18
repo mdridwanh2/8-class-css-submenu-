@@ -1,0 +1,73 @@
+/* common css start ********************************************************************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+/* common css end ***********************************************************************************************/
+body{
+    background-color: #b2b6b672;
+}
+
+
+
+
+/* nav start css */
+nav ul{
+    text-align: center;
+    background-color: rgb(8, 121, 165);
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+    
+}
+ nav ul li a{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(250, 248, 246);
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 40px;
+ }
+
+ nav ul li a:hover{
+    color: #f9cc04;
+ }
+
+/* sub menu start */
+
+nav .submenu{
+    position: absolute;
+    background-color: rgba(4, 7, 73, 0.854);
+    width: 300px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+
+}
+
+nav ul li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+nav .submenu a{
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+/* sub menu end */
+
+/* nav end css */
